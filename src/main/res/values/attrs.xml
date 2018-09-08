@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--走马灯TextView属性-->
+    <declare-styleable name="MarqueeTextView">
+        <attr name="direction" format="integer"/>
+        <attr name="speed" format="integer"/>
+        <attr name="delayTime" format="integer"/>
+        <attr name="offsetDistance" format="integer"/>
+        <attr name="startFromInitPosition" format="boolean"/>
+    </declare-styleable>
+</resources>
