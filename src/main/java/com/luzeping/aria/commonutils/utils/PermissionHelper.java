@@ -1,6 +1,7 @@
 package com.luzeping.aria.commonutils.utils;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -22,17 +23,16 @@ public class PermissionHelper {
             permissionCallback.permissionGranted();
             return;
         }
-
         PermissionRequest request = new PermissionRequest(new ArrayList(Arrays.asList(permissions)),permissionCallback);
         requests.add(request);
         ActivityCompat.requestPermissions(activity,permissions,request.getRequestCode());
     }
 
-    public static boolean hasPermission(Activity activity, String[] permissions) {
+    public static boolean hasPermission(Context context, String[] permissions) {
         int size = permissions.length;
         for (int  i = 0;i< permissions.length; i++) {
             String permission = permissions[i];
-            if (ContextCompat.checkSelfPermission(activity,permission) != 0)
+            if (ContextCompat.checkSelfPermission(context,permission) != 0)
                 return false;
         }
         return true;
