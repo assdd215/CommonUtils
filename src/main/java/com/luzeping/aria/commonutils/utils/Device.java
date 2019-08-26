@@ -1,15 +1,11 @@
 package com.luzeping.aria.commonutils.utils;
 
-import android.Manifest;
-import android.app.Application;
 import android.content.ComponentName;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.media.Image;
-import android.os.Build;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
 import java.nio.ByteBuffer;

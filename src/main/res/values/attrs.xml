@@ -8,4 +8,8 @@
         <attr name="offsetDistance" format="integer"/>
         <attr name="startFromInitPosition" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="AlignTextView">
+        <attr name="alignOnlyOneLine" format="boolean"/>
+    </declare-styleable>
 </resources>
